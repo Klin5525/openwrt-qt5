@@ -1,0 +1,26 @@
+Index: qt-everywhere-src-5.12.8/qtbase/src/corelib/global/qendian.h
+===================================================================
+--- qt-everywhere-src-5.12.8.orig/qtbase/src/corelib/global/qendian.h
++++ qt-everywhere-src-5.12.8/qtbase/src/corelib/global/qendian.h
+@@ -43,7 +43,7 @@
+ 
+ #include <QtCore/qfloat16.h>
+ #include <QtCore/qglobal.h>
+-
++#include <limits>
+ // include stdlib.h and hope that it defines __GLIBC__ for glibc-based systems
+ #include <stdlib.h>
+ #include <string.h>
+Index: qt-everywhere-src-5.12.8/qtbase/src/corelib/tools/qbytearraymatcher.h
+===================================================================
+--- qt-everywhere-src-5.12.8.orig/qtbase/src/corelib/tools/qbytearraymatcher.h
++++ qt-everywhere-src-5.12.8/qtbase/src/corelib/tools/qbytearraymatcher.h
+@@ -41,7 +41,7 @@
+ #define QBYTEARRAYMATCHER_H
+ 
+ #include <QtCore/qbytearray.h>
+-
++#include <limits>
+ QT_BEGIN_NAMESPACE
+ 
+ 
